@@ -93,6 +93,7 @@ public:
                 cout << queues_array[FRONT] << " ";
                 FRONT_Position++;
             }
+            cout << endl;
         }
     }
 };
@@ -142,3 +143,5 @@ int main()
             cout << "Check for the value entered." << endl;
         }
     }
+    return 0;
+}
