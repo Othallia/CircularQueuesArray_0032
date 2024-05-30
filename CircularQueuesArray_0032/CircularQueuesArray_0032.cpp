@@ -36,9 +36,8 @@ public:
         queues_array[REAR] = num; // Menambahkan elemen ke antrian
     }
 
-    // Method untuk menghapus elemen dari queue
     void remove() {
-        // cek apakah antrian kosong // ini
+        // cek apakah antrian kosong
         if (FRONT == -1) {
             cout << "Queues Underflow\n";
             return;
@@ -71,3 +70,13 @@ public:
         }
 
         cout << "\nElements in the queue are...\n";
+
+        //Jika FRONT <= REAR, iterasi dari FRONT hingga REAR
+        if (FRONT_Position <= REAR_Position) {
+            while (FRONT_Position <= REAR_Position) {
+                cout << queues_array[FRONT_Position] << " ";
+                FRONT_Position++;
+            }
+            cout << endl;
+        }
+       
