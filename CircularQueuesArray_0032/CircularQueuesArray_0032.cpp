@@ -64,7 +64,7 @@ public:
         int REAR_Position = REAR;
 
         //Cek apakah antrian kosong
-        if (FRONT_Position == -1) {
+        if (FRONT == -1) {
             cout << "Queue is empty\n";
             return;
         }
@@ -114,3 +114,11 @@ int main()
             cout << "Enter your choice (1-4) : " << endl;
             cin >> ch;
             cout << endl;
+
+            switch (ch) {
+            case '1': {
+
+                q.insert();
+                break;
+            }
+          
